@@ -1,0 +1,22 @@
+.main-page-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.Carousel-Sidebar-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+#Carousel {
+  width: 95%;
+}
+
+#SideBar {
+  position: sticky;
+  width: 15%;
+}
+
+#Reviews {
+  /* background-color: aquamarine; */
+}
