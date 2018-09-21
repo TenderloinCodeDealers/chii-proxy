@@ -1,0 +1,34 @@
+.main-page-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.Carousel-Sidebar-Reviews-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.CarouselWrapper {
+  height: 150vh;
+}
+
+.Carousel-Review-Wrapper {
+  width: 100%;
+}
+
+.SideBarWrapper {
+  border-left: 1px solid gray;
+}
+
+#Carousel {
+  width: 150%;
+  position: absolute;
+}
+
+#SideBar {
+  position: sticky;
+}
+
+#Reviews {
+  /* background-color: aquamarine; */
+}
