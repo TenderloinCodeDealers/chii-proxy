@@ -3,18 +3,30 @@
   flex-direction: column;
 }
 
-.Carousel-Sidebar-flex {
+.Carousel-Sidebar-Reviews-flex {
   display: flex;
   flex-direction: row;
 }
 
+.CarouselWrapper {
+  height: 150vh;
+}
+
+.Carousel-Review-Wrapper {
+  width: 100%;
+}
+
+.SideBarWrapper {
+  border-left: 1px solid gray;
+}
+
 #Carousel {
-  width: 95%;
+  width: 150%;
+  position: absolute;
 }
 
 #SideBar {
   position: sticky;
-  width: 15%;
 }
 
 #Reviews {
