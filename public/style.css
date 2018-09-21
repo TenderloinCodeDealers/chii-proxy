@@ -6,10 +6,12 @@
 .Carousel-Sidebar-Reviews-flex {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .CarouselWrapper {
   height: 150vh;
+  width: 75vw;
 }
 
 .Carousel-Review-Wrapper {
@@ -21,7 +23,7 @@
 }
 
 #Carousel {
-  width: 150%;
+  width: 145%;
   position: absolute;
 }
 
