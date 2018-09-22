@@ -26,7 +26,7 @@ app.get("/:dealId/api/ratings", function(req, res) {
   const dealId = req.params.dealId;
   res.redirect(
     url.format({
-      pathname: `${ratingsAndReviewsServer}/${dealId}/api/reviews'`,
+      pathname: `${ratingsAndReviewsServer}/${dealId}/api/reviews`,
       params: req.query
     })
   );
