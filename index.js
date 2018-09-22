@@ -3,7 +3,9 @@ const app = express();
 const path = require("path");
 const port = 3000;
 const url = require("url");
+const compression = require("compression");
 
+app.use(compression());
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/:id", express.static(path.join(__dirname, "public")));
 
