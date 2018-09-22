@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/:id", express.static(path.join(__dirname, "public")));
 
 const carouselServer = "http://54.183.146.159";
-const sidebarServer = "http://localhost:3004";
+const sidebarServer = "http://18.191.153.175:3004";
 const ratingsAndReviewsServer = "http://13.57.214.131:30";
 const rVDealsServer = "http://54.193.11.2:3000";
 
