@@ -8,8 +8,8 @@ app.use("/:id", express.static(path.join(__dirname, "public")));
 
 const carouselServer = "http://54.183.146.159";
 const sidebarServer = "http://localhost:3004";
-const ratingsAndReviewsServer = "http://localhost:3002";
-const rVDealsServer = "http://localhost:3003";
+const ratingsAndReviewsServer = "http://13.57.214.131:30";
+const rVDealsServer = "http://54.193.11.2:3000";
 
 app.get(`/:id/api/recently-viewed-product-data`, function(req, res) {
   const id = req.params.id;
@@ -23,7 +23,6 @@ app.get(`/:id/api/recently-viewed-service-data`, function(req, res) {
 
 app.get("/:dealId/api/ratings", function(req, res) {
   const dealId = req.params.dealId;
-  console.log(req.query);
   res.redirect(
     url.format({
       pathname: `${ratingsAndReviewsServer}/${dealId}/api/reviews'`,
