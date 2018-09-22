@@ -6,6 +6,15 @@ Vourcher Proxy server integrates the microservices created in the Vourcher proje
 - Ratings and reviews
 - Recently viewed deals
 
+## Table of Contents
+
+1. [Getting Started](#getting-started)
+1. [Prerequisites](#prerequisites)
+1. [Installing](#installing)
+1. [Usage](#usage)
+1. [Deployment](#deployment)
+1. [Related Projects](#related-projects)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -21,6 +30,9 @@ npm install
 ```
 
 ## Usage
+
+#Before Running
+
 To start the server run
 ```
 npm start
@@ -43,6 +55,7 @@ http://localhost:3000/<NUMBER_FROM_1_TO_100>
 - https://github.com/TenderloinCodeDealers/side-bar
 - https://github.com/TenderloinCodeDealers/ratings-reviews
 - https://github.com/TenderloinCodeDealers/recently-viewed-deals
+- https://github.com/TenderloinCodeDealers/photo-carousel
 
 ## Authors
 
