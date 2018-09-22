@@ -34,7 +34,7 @@ app.get("/:dealId/api/ratings", function(req, res) {
 
 app.get("/:dealId/api/reviews", function(req, res) {
   const dealId = req.params.dealId;
-  res.redirect(`${ratingsAndReviewsServer}/${dealId}/api/reviews'`);
+  res.redirect(`${ratingsAndReviewsServer}/${dealId}/api/reviews`);
 });
 
 app.get("/:id/api/images", function(req, res) {
