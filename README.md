@@ -31,8 +31,7 @@ npm install
 
 ## Usage
 
->Before Running
-Vourcher Proxy Server depends on having the servers for the carousel, sidebar, reviews, and recently viewed deals running.
+>Vourcher Proxy Server depends on having the servers for the carousel, sidebar, reviews, and recently viewed deals running.
 
 To start the server run
 ```
