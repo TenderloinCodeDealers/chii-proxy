@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const port = 3000;
 const compression = require("compression");
+const url = require("url");
 
 app.use(compression());
 app.use(express.static(path.join(__dirname, "public")));
@@ -18,11 +19,14 @@ app.get(`/:id/api/recently-viewed-product-data`, function(req, res) {
   res.redirect(`${rVDealsServer}/${id}/api/recently-viewed-product-data`);
 });
 
-app.get("/:dealId/api/ratings", function(req, res) {
-  const dealId = req.params.dealId;
-  res.redirect(`${ratingsAndReviewsServer}/${dealId}/api/ratings?total`);
+app.get("/:dealId/api/ratings", (req, res) => {
+  res.redirect(
+    url.format({
+      pathname: `${ratings}/${req.params.dealId}/api/ratings`,
+      query: req.query
+    })
+  );
 });
-
 app.get("/:dealId/api/reviews", function(req, res) {
   const dealId = req.params.dealId;
   res.redirect(`${ratingsAndReviewsServer}/${dealId}/api/reviews`);
