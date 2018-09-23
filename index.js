@@ -20,7 +20,7 @@ app.get(`/:id/api/recently-viewed-product-data`, function(req, res) {
 
 app.get("/:dealId/api/ratings", function(req, res) {
   const dealId = req.params.dealId;
-  res.redirect(`${ratingsAndReviewsServer}/${dealId}/api/ratings`);
+  res.redirect(`${ratingsAndReviewsServer}/${dealId}/api/ratings?total`);
 });
 
 app.get("/:dealId/api/reviews", function(req, res) {
