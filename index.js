@@ -19,16 +19,11 @@ app.get(`/:id/api/recently-viewed-product-data`, function(req, res) {
   res.redirect(`${rVDealsServer}/${id}/api/recently-viewed-product-data`);
 });
 
-app.get(`/:id/api/recently-viewed-service-data`, function(req, res) {
-  const id = req.params.id;
-  res.redirect(`${rVDealsServer}/${id}/api/recently-viewed-service-data`);
-});
-
 app.get("/:dealId/api/ratings", function(req, res) {
   const dealId = req.params.dealId;
   res.redirect(
     url.format({
-      pathname: `${ratingsAndReviewsServer}/${dealId}/api/reviews`,
+      pathname: `${ratingsAndReviewsServer}/${dealId}/api/ratings`,
       params: req.query
     })
   );
