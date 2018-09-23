@@ -22,7 +22,7 @@ app.get(`/:id/api/recently-viewed-product-data`, function(req, res) {
 app.get("/:dealId/api/ratings", (req, res) => {
   res.redirect(
     url.format({
-      pathname: `${ratings}/${req.params.dealId}/api/ratings`,
+      pathname: `${ratingsAndReviewsServer}/${req.params.dealId}/api/ratings`,
       query: req.query
     })
   );
